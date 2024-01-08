@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link rel ="stylesheet" href="Styles.css"> <!--This tag let us load our css-->
+  <script defer src = "Function.js" > </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <body>
+
+      <header id = "main-tittle" class="tittle">MONSTER HUNT!</header>
+
+      <div class="tittle" id="div-tittle">
+
+        <h2 id="subtittle" class="tittle">Choose Your Monster</h2>
+
+      </div>
+
+      
+  <div class="selection-mokepon" id ="div-selection-mokepon">
+
+</div>
+
+<!-- Mokepon map -->
+<div id="mapContainer">
+
+  <canvas id="mokeponMap"></canvas>
+
+  <p>Use (w a s d) for move your <span id = mkMapSpan></span></p>
+
+</div> 
+
+<!-- WE CAN USE SHIFT+ALT+A TO COMENT OUR CODE ! -->
+  <div id = "selection-button">
+    <button id ="Select">SELECT</button> <!--We this button we choose our Mk-->
+  </div>
+  
+
+  <div id ="div-lifes-game">
+
+    <p id ="imageMkPlayer"></p>  
+
+    <p class = "life-score" id ="life-score-Player"><span id ="victories-Span-Player" class = "spanTurns">0</span><br><span id="mokepon-name"></span></p>
+
+    <button id = "new-game">RESET</button>
+
+    <p id = "VersusMessage">VS</p>
+    
+    <p class ="life-score" id = "life-score-enemy"><span id = "victories-Span-enemy"  class = "spanTurns">0</span><br><span id = "name-enemy"> </span></p>
+
+    <p id ="imageMkEnemy"></p>
+
+    </div>
+
+<div id = "attack-buttons">
+
+</div>
+
+
+    <div id="span-elements">
+
+      <p id = "defeat-tittle"><span id ="span-combat-result">FIGHT!</span></p>
+    
+    </div>
+
+
+  <div id ="game-functionality"> 
+      
+    <label id = "label-rename-button"  for = "rename-button" >Here you can rename your <span id ="span-rename-mokepon">mokepon</span> if you want</label>
+      
+    <input type = "text" id = "rename-button">
+    <input id = "Rename-mokepon" type = "submit" value="Rename">
+    <input id = "No-Rename-Mokepon" type = "submit" value = "No rename">
+      
+  </div>  
+  
+</body>
+
+</html>
+
